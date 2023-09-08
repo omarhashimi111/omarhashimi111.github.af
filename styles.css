@@ -1,0 +1,191 @@
+
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    transition: all 500ms ease;
+    scroll-snap-type: y mandatory;
+}
+
+
+
+.topbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: rgba(10, 13, 187, 0.918);
+    position: fixed;
+    z-index: 2;
+
+}
+.topbar .left{
+    margin: 10px;
+}
+
+.topbar .logo{
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.topbar .logo a {
+    list-style: none;
+    text-decoration: none;
+    color: rgba(10, 13, 187, 0.918);
+}
+
+.topbar .right{
+    margin: 10px;
+}
+
+.topbar .right .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 34px;
+    height: 28px;
+    cursor: pointer;
+}
+.wrapper:hover{
+    transform: scale(1.1);
+}
+.topbar .right .wrapper span:first-child{
+    width: 100%;
+    height: 6px;
+    background-color: rgba(10, 13, 187, 0.918);
+}
+.topbar .right .wrapper span:nth-child(2){
+    width: 100%;
+    height: 6px;
+    background-color: rgba(10, 13, 187, 0.918);
+}
+.topbar .right .wrapper span:last-child{
+    width: 100%;
+    height: 6px;
+    background-color: rgba(10, 13, 187, 0.918);
+}
+
+/* Menu */
+
+.menu{
+    width: 300px;
+    height: calc(100vh - 70px);
+    background-color: rgba(10, 13, 187, 0.918);
+    position: fixed;
+    top: 70px;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .75s ease;
+    z-index: 2;
+}
+
+.menu ul{
+    font-size: 34px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+}
+
+.menu ul li{
+    margin: 25px;
+    list-style: none;
+}
+.menu ul li a{
+    font-weight: 500;
+    color: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+    list-style: none;
+    transition: all .75s ease;
+
+}
+.menu ul li a:hover{
+    font-weight: 600;
+}
+
+/* Intro part */
+
+.intro{
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    scroll-snap-align: start;
+}
+.intro .left{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+
+}
+.intro .left img{
+    display: flex;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.intro .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 40px;
+    flex: 2;
+    background-color: #fff;
+}
+.intro .right img{
+    width: 35px;
+}
+.intro .right img:hover{
+    transform: translate(0%,7px);
+
+}
+
+.intro .right div:last-child{
+    padding-top: 4%;
+    padding-left: 11%;
+    
+
+}
+
+
+
+
+
+/* Works section */
+
+.works {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    scroll-snap-align: start;
+
+}
+
+
+/* Contact section */
+
+.contact {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(20, 180, 42, 0.548);
+    scroll-snap-align: start;
+
+}
