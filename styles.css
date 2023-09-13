@@ -50,6 +50,7 @@
     cursor: default;
     color: aliceblue;
     font-size: 26px;
+    letter-spacing: 2px;
 }
 
 
@@ -120,18 +121,14 @@
     height: 560px;
     object-fit: cover;
     border-radius: 50%;
+    border: 2px solid #0956f4;
 }
 .intro > .right{
     flex: 1;
     height: 100%;
     display: flex;
-    align-items: center;
-    
+    align-items: center;   
 }
-.right > .intro-container{
-
-}
-
 
 #down{
     width: 40px;
@@ -153,6 +150,60 @@
 }
 .work-detail > p {
     margin-top: 10px;
+}
+
+/* slider */
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+}
+.bt {
+    margin-top: 2rem;
+}
+.bt > button {
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    border-color: #0956f4;
+}
+.bt > button:hover{
+    background-color: aquamarine;
+    border: 2px solid #555;
+}
+.bt > button:active{
+    background-color: #1eeede;
+    color: orangered;
+}
+.slider-box{
+    padding: 4px;
+    width: 80%;
+    display: flex;
+    border: 2px solid #0956f4;
+    border-radius: 10px;
+}
+.slider-box > a{
+    flex: 1;
+    
+}
+.slider-box > a > img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.img-detail{
+    flex: 1;
+    text-align: center;
+    border-left: 2px solid #0956f4;
+}
+#img-data {
+    margin: 30px;
+    text-align: left;
 }
 /* contact */
 .contact{
