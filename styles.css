@@ -1,12 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 .app {
-    width: 100%;
     height: 100vh;
     scrollbar-width: none;
     
@@ -24,7 +22,7 @@
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .burger-box{
@@ -71,11 +69,11 @@
 /* Menu */
 .menu{
     width: 280px;
-    height: calc(100vh - 65px);
-    position: fixed;
-    top: 65px;
-    right: -280;
+    height: 100vh;
     background-color: rgb(6, 87, 238);
+    position: fixed;
+    top: 0;
+    right: -280px;
     z-index: 1;
     display: flex;
     justify-content: center;
