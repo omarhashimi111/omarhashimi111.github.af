@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    transition: all 250ms ease;
 }
 
 .app {
@@ -33,6 +34,9 @@
     flex-direction: column;
     margin: 0 10px;
     cursor: pointer;
+}
+.burger-box:hover{
+    transform: scale(1.1)
 }
 
 .burger-box span {
@@ -93,15 +97,62 @@
     text-decoration: none;
     color: #fff;
 }
+.menu > ul > li:hover{
+    transform: scale(1.1)
+}
 
 
 /* intro */
 .intro{
-    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+}
+.intro > .left{
+    flex: 1;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.intro > .left > img {
+    width: 550px;
+    height: 560px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.intro > .right{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.right > .intro-container{
+
+}
+
+
+#down{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 40%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#down:hover{
+    transform: scale(1.2);
 }
 /* work */
 .work{
-    background-color: blueviolet;
+    background-color: #fff;
+}
+.work-detail{
+    text-align: center;
+}
+.work-detail > p {
+    margin-top: 10px;
 }
 /* contact */
 .contact{

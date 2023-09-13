@@ -12,7 +12,7 @@
     <div class="app">
         <div class="topbar">
             <div id="logo" class="logo">OMAR.</div>
-            <div class="burgar">
+            <div class="burgar" onclick="menu()">
                 <div class="burger-box">
                     <span class="line1"></span>
                     <span class="line2"></span>
@@ -20,16 +20,34 @@
                 </div>
             </div>
         </div>
-        <div class="menu">
-            <ul>
+        <div id="menu" class="menu">
+            <ul onclick="menu()">
                 <li><a href="#intro">Profile</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <div class="sections">
-            <div class="intro" id="intro"></div>
-            <div class="work" id="work"></div>
+            <div class="intro" id="intro">
+                <div class="left">
+                    <img src="./assets/img2.jpg" alt="Profile Image">
+                </div>
+                <div class="right">
+                    <div class="intro-container">
+                        <h3>Hey There!</h3>
+                        <h2>I'm Omar Hashimi</h2>
+                        <h3>Professional Data analyst & Front-end Developer</h3>
+                        <img id="down" src="./assets/down.png" alt="Down">
+                    </div>
+                </div>
+            </div>
+            <div class="work" id="work">
+                <div class="work-detail">
+                    <h2>Data Science</h2>
+                    <p>Here are some data projects I have completed.</p>
+                    <p>Utilizing Python, MySQL, MS Excel and so on</p>
+                </div>
+            </div>
             <div class="contact" id="contact"></div>
         </div>
     </div>
