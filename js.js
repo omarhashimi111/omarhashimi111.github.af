@@ -1,16 +1,39 @@
 
+let menuL = document.getElementById("menu");
+let burgarBtn = document.querySelector(".burgar");
+let line1 = document.querySelector(".line1")
+let line2 = document.querySelector(".line2")
+let line3 = document.querySelector(".line3")
+let section = document.querySelector(".sections");
 
-let x = false;
 function menu(){
-    if(x==false){
-        x = !x;
-        document.getElementById("menu").style.right = "0"
-
-    }else {
-        x = !x;
-        document.getElementById("menu").style.right = "-280px"
+    
+    if(menuL.classList.contains("open")){
+        menuL.classList.remove("open")
+        line1.classList.remove("line11")
+        line2.classList.remove("line22")
+        line3.classList.remove("line33")
+    }else{
+        menuL.classList.add("open")
+        line1.classList.add("line11")
+        line2.classList.add("line22")
+        line3.classList.add("line33")
     }
+
 }
+window.addEventListener("click",function(e){
+
+    if(e.target != menuL && e.target !== burgarBtn &&
+        e.target != line1 && e.target != line2 && e.target != line3
+        && e.target != this.document.querySelector(".burger-box")){
+        if(menuL.classList.contains("open")){
+            menuL.classList.remove("open")
+            line1.classList.remove("line11")
+            line2.classList.remove("line22")
+            line3.classList.remove("line33")
+        }
+    }
+})
 
 let images = [
     {

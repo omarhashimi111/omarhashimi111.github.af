@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    transition: all 250ms ease;
+    transition: all 280ms ease;
 }
 
 .app {
@@ -25,6 +25,10 @@
     top: 0;
     z-index: 2;
 }
+.topbarActive{
+    background-color: #f1e6e6;
+    color: rgb(6, 87, 238);
+}
 
 .burger-box{
     width: 40px;
@@ -43,6 +47,18 @@
     width: 34px;
     height: 5px;
     background-color: aliceblue;
+}
+
+.line11{
+    transform-origin: left;
+    transform: rotate(50deg);
+}
+.line22{
+    opacity: 0;
+}
+.line33{
+    transform-origin: left;
+    transform: rotate(-50deg);
 }
 
 .logo {
@@ -84,6 +100,9 @@
     justify-content: center;
     align-items: center;
 }
+.open{
+    right: 0;
+}
 .menu > ul{
     font-size: 26px;
     font-weight: 700;
@@ -121,13 +140,51 @@
     height: 560px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid #0956f4;
+    border: 4px solid #0956f4;
+    animation: imgAnimation 10s ease-in-out infinite;
+}
+@keyframes imgAnimation{
+    10%{
+        border-color: #1d28bb;
+    }
+    25%{
+        border-color: #4903b8;
+    }
+    50%{
+        border-color: #06b12b;
+    }
+    75%{
+        border-color: #b90541;
+    }
+    100%{
+        border-color: #0582ca;
+    }
 }
 .intro > .right{
     flex: 1;
     height: 100%;
     display: flex;
     align-items: center;   
+}
+.pro{
+    font-weight: 1500;
+    font-size: 24px;
+    animation: proanimation 8s linear infinite;
+}
+@keyframes proanimation{
+    0%{
+        color: rgb(224, 7, 7);
+    }
+    20%{color: rgb(224, 7, 7);}
+    23%{color: black;}
+    24%{color: rgb(224, 7, 7);}
+    25%{color: black;}
+    27%{color: rgb(224, 7, 7);}
+    28%{color: black;}
+    29%{color: rgb(224, 7, 7);}
+    30%{color: black;}
+    32%{color: rgb(224, 7, 7);}
+    100%{color: rgb(224, 7, 7);}
 }
 
 #down{
@@ -213,4 +270,37 @@
 /* contact */
 .contact{
     background-color: brown;
+    position: relative;
+    background: url(./assets/Contact-Us.jpg) no-repeat center center/ cover;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:45%;
+    left: 55%;
+    gap: .5rem;
+}
+.form > *{
+   width: 95%; 
+   border-radius: 4px;
+   box-shadow: 2px 1px 6px;
+}
+.form > button{
+    width: 50%;
+    height: 40px;
+    border: 2px solid #1eeede;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.form > button:hover{
+    background-color: #221818;
+    color: #fff;
+}
+.form > button:active{
+    background-color: green;
 }
