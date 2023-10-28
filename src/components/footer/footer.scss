@@ -1,0 +1,36 @@
+@import "../../Global.scss";
+
+
+.footer{
+    background-color: rgba(255,255,255,.2);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    
+
+    .contain{
+        width: 400px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+
+        h1{
+            font-size: 20px;
+            font-weight: 400;
+            color: $mainColor;
+
+            span{
+                font-size: 28px;
+                font-weight: 900;
+                color: crimson;
+            }
+        }
+    }
+}
