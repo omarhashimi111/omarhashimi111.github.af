@@ -1,0 +1,121 @@
+@import "../../Global.scss";
+
+.intro{
+    background-color: #fff;
+    display: flex;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .left{
+        flex: 5;
+        overflow: hidden;
+        
+
+        .imgcontainer{
+            width: 650px;
+            height: 650px;
+            border-radius: 50%;
+            background-color: crimson;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            
+            
+            @include mobile{
+                align-items: flex-start;
+            }
+
+            img{
+                width: 100%;
+                object-fit: cover;
+
+                @include mobile{
+                    height: 70%;
+                }
+
+            }
+        }
+    }
+    .right{
+        flex: 5;
+        position: relative;
+
+
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @include mobile{
+                align-items: center;
+            }
+
+
+            h1{
+                font-size: 50px;
+                margin: 10px 0;
+
+                @include mobile{
+                    font-size: 30px;
+                }
+            }
+            h2{
+                font-size: 28px;
+                @include mobile{
+                    font-size: 26px;
+                }
+            }
+            h3{
+                font-size: 22px;
+                @include mobile{
+                    font-size: 20px;
+                }
+
+                span{
+                    font-size: inherit;
+                    color: crimson;
+                }
+            }
+        }
+        a{
+            position: absolute;
+            bottom: 50px;
+            left: 35%;
+            overflow: hidden;
+
+            @include mobile{
+                bottom: 5px;
+                left: 45%;
+            }
+            
+
+            img{
+                width: 40px;
+                animation: down 5s infinite ease-in-out;
+                
+            }
+
+            @keyframes down {
+                0%{
+                    transform: translateY(2px);
+                }
+
+                
+                50%{
+                    transform: translateY(-5px); 
+                }
+                100%{
+                    transform: translateY(4px);
+                }
+                
+            }
+        }
+    }
+}
