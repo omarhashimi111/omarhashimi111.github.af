@@ -6,6 +6,7 @@ import Portf from "./components/portf/Portf"
 import Works from "./components/works/Works"
 import Contact from "./components/contact/Contact"
 import Menu from './components/menu/Menu'
+import Footer from './components/footer/Footer'
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -21,6 +22,7 @@ function App() {
         <Works/>
         <Contact/>
       </div>
+      <Footer/>
 
       
     </div>
