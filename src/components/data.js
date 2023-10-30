@@ -1,4 +1,5 @@
 export const dataA = [
+    
     {
         id:1,
         title: "Bank Dataset",
@@ -34,6 +35,17 @@ export const dataA = [
 ]
 
 export const React = [
+    {
+        id: 0,
+        title: "Mp3 Player",
+        img: "assets/react/mp3.png",
+        link: "https://omarhashimi111.github.io/Mp3/"
+    },{
+        id: 4,
+        title: "Budget Management",
+        img: "assets/react/budget.png",
+        link: "https://omarhashimi111.github.io/Budget-Tracker/"
+    },
     {
         id: 1,
         title: "Todo-List",
