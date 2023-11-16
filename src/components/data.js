@@ -36,6 +36,12 @@ export const dataA = [
 
 export const React = [
     {
+        id: 23,
+        title: "Shopping Cart",
+        img: "assets/react/shopping-cart.png",
+        link: "https://omarhashimi111.github.io/Shopping-cart"
+    },
+    {
         id: 0,
         title: "Mp3 Player",
         img: "assets/react/mp3.png",
