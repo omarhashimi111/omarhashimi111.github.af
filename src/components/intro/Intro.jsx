@@ -1,18 +1,26 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import "./intro.scss"
 import {init} from "ityped"
+import Animate from "../TextAnimate/Animate"
 
 export default function Intro() {
   const text = useRef()
+  const [animateClass,setAnimateClass] = useState("text-animate")
+
 
   useEffect(()=>{
-    init(text.current,{
-      showCursor: false,
-      backDelay: 1500,
-      strings: ["designer","Full-Stack Developer","Data Analyst"]
-    })
+    setTimeout(()=>{
+      init(text.current,{
+        showCursor: false,
+        backDelay: 1500,
+        strings: ["designer","Full-Stack Developer","Data Analyst"]
+      })
+    },4000)
+    
   },[])
-
+  const hh2 = ['H','i', ' ','T','h','e','r','e',',','I',"'",'m']
+  const hh1 = ['O','m','a','r',' ','H','a','s','h','i','m','i']
+  const Professional = ['P','r','o','f','e','s','s','i','o','n','a','l'," "]
 
   return (
     <div className='intro' id="intro">
@@ -23,9 +31,10 @@ export default function Intro() {
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>Hi There,I'm</h2>
-          <h1>Omar Hashimi</h1>
-          <h3>Professional <span ref={text}></span></h3>
+          <h2><Animate animateClass={animateClass} textArray={hh2}
+          index={3} /></h2>
+          <h1><Animate animateClass={animateClass} textArray={hh1} index={15} /></h1>
+          <h3><Animate animateClass={animateClass} textArray={Professional} index={23}/><span ref={text}></span></h3>
         </div>
         <a href="#portf">
           <img src="assets/down.png" alt="" />

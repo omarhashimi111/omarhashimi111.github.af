@@ -74,8 +74,10 @@
             }
             h3{
                 font-size: 22px;
+                color: black;
                 @include mobile{
                     font-size: 20px;
+                    color: black;
                 }
 
                 span{

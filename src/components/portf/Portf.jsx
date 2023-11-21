@@ -4,7 +4,7 @@ import "./portf.scss"
 import {dataA,React,backEnd} from "../data"
 
 function Portf() {
-  const [selected,setSelected] = useState("data")
+  const [selected,setSelected] = useState("web")
   const [data ,setData] = useState(dataA)
   
 
