@@ -59,11 +59,6 @@ export const React = [
         link: "https://omarhashimi111.github.io/Budget-Tracker/"
     },
     {
-        id: 1,
-        title: "Todo-List",
-        img: "assets/react/todo-list.png",
-        link: "https://omarhashimi111.github.io/vanilla-javascript-todo-list/"
-    },{
         id: 2,
         title: "Timer",
         img: "assets/react/reactTimer.png",
@@ -73,3 +68,12 @@ export const React = [
 
 
 export const backEnd = []
+
+export const games = [
+    {
+        id: 1,
+        title: "Memory Game",
+        img: "assets/games/memory-game.png",
+        link: "https://omarhashimi111.github.io/memory-game/"
+    },
+]

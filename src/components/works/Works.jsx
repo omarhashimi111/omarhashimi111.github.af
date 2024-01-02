@@ -25,7 +25,7 @@ function Works() {
                 </div>
                 <h2>{data.title}</h2>
                 <p>{data.desc}</p>
-                <span>Projects</span>
+                <span><a href={data.link}>Projects</a></span>
               </div>
             </div>
             <div className="right">
