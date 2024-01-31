@@ -46,6 +46,11 @@ export const React = [
         title: "Shopping Cart",
         img: "assets/react/shopping-cart.png",
         link: "https://omarhashimi111.github.io/Shopping-cart"
+    },{
+        id: 7,
+        title: "E-Commerce",
+        img: "assets/react/javascriptEcommerce.png",
+        link: "https://omarhashimi111.github.io/javascript-ecommerce/"
     },
     {
         id: 0,
