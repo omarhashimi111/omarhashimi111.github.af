@@ -13,14 +13,14 @@ export default function Intro() {
       init(text.current,{
         showCursor: false,
         backDelay: 1500,
-        strings: ["designer","Full-Stack Developer","Data Analyst"]
+        strings: ["Designer","Full-Stack Developer","Data Analyst"]
       })
     },4000)
     
   },[])
   const hh2 = ['H','i', ' ','T','h','e','r','e',',','I',"'",'m']
   const hh1 = ['O','m','a','r',' ','H','a','s','h','i','m','i']
-  const Professional = ['P','r','o','f','e','s','s','i','o','n','a','l'," "]
+  const Professional = ['F','r','e','e','l','a','n','c','e','r'," "]
 
   return (
     <div className='intro' id="intro">
