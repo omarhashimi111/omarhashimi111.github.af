@@ -36,35 +36,35 @@ export const dataA = [
 
 export const React = [
     {
-        id:7,
+        id:1,
         title: "Portfolio",
         img: "assets/react/Portfolio.png",
         link: "https://omarhashimi111.github.io/Portfolio/" 
     },
     {
-        id: 23,
+        id: 2,
         title: "Shopping Cart",
         img: "assets/react/shopping-cart.png",
         link: "https://omarhashimi111.github.io/Shopping-cart"
     },{
-        id: 7,
+        id: 3,
         title: "E-Commerce",
         img: "assets/react/javascriptEcommerce.png",
         link: "https://omarhashimi111.github.io/javascript-ecommerce/"
     },
     {
-        id: 0,
+        id: 4,
         title: "Mp3 Player",
         img: "assets/react/mp3.png",
         link: "https://omarhashimi111.github.io/Mp3/"
     },{
-        id: 4,
+        id: 5,
         title: "Budget Management",
         img: "assets/react/budget.png",
         link: "https://omarhashimi111.github.io/Budget-Tracker/"
     },
     {
-        id: 2,
+        id: 6,
         title: "Timer",
         img: "assets/react/reactTimer.png",
         link: "https://omarhashimi111.github.io/React-Timer/"
