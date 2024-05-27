@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
 import PortfList from "./PortfList"
 import "./portf.scss"
-import {dataA,React,backEnd,games} from "../data"
+import {dataA,React,SystemDesign,games} from "../data"
 
 function Portf() {
-  const [selected,setSelected] = useState("web")
+  const [selected,setSelected] = useState("data")
   const [data ,setData] = useState(dataA)
   
 
@@ -16,8 +16,8 @@ function Portf() {
       case "web":
         setData(React)
         break;
-      case "back-end":
-        setData(backEnd)
+      case "systemDesign":
+        setData(SystemDesign)
         break;
       case "game":
         setData(games)
@@ -37,8 +37,8 @@ function Portf() {
       id: "data",
       title: "Data Analyst"
     },{
-      id: "back-end",
-      title: "Back-End"
+      id: "systemDesign",
+      title: "Data Engineering"
     },{
       id: "game",
       title: "Games"
