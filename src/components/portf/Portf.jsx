@@ -58,7 +58,7 @@ function Portf() {
               return (
                 <a key={data.id} href={data.link}>
                   <div className="item">
-                    <img src={data.img} alt="" />
+                    <img src={data.img} alt={data.title} loading="lazy"/>
                     <h3>{data.title}</h3>
                   </div>
                 </a>

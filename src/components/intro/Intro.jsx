@@ -26,7 +26,7 @@ export default function Intro() {
     <div className='intro' id="intro">
       <div className="left">
         <div className="imgcontainer">
-          <img src="assets/img2.jpg" alt="" />
+          <img src="assets/img2.jpg" alt="" loading="lazy"/>
         </div>
       </div>
       <div className="right">

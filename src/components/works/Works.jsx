@@ -21,7 +21,7 @@ function Works() {
             <div className="left">
               <div className="leftContainer">
                 <div className="imgContainer">
-                  <img src={data.icon} alt="" />
+                  <img src={data.icon} alt={data.title} loading="lazy" />
                 </div>
                 <h2>{data.title}</h2>
                 <p>{data.desc}</p>
@@ -29,7 +29,7 @@ function Works() {
               </div>
             </div>
             <div className="right">
-              <img src={data.img} alt="" />
+              <img src={data.img} alt={data.title} loading="lazy"/>
             </div>
           </div>
         </div>))}
