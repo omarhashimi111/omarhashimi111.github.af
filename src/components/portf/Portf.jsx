@@ -51,7 +51,7 @@ function Portf() {
         {list.map(item=> <PortfList key={item.id} item={item}  active={selected === item.id}
          setSelected={setSelected}/>)}
       </ul>
-      <div className="container">
+      <div className="containery">
 
 
         {data.length == 0 ? (<h1>Soon Will Be Update</h1>): data.map(data=>{

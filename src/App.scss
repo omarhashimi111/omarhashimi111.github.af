@@ -1,23 +1,22 @@
 @import "animate.css";
 
 
-
 .app{
-    height: 100vh;
+    height: 100svh;
 
     .sections{
         width: 100%;
-        height: calc(100vh - 105px);
+        height: calc(100svh - 105px);
         background-color: black;
         position: relative;
         top: 70px;
         bottom: 40px;
+        scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         scrollbar-width: none;
         &::-webkit-scrollbar{
             display: none;
         }
-        scroll-behavior: smooth;
 
         > *{
             width: 100%;

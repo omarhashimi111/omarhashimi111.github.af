@@ -51,12 +51,17 @@ export const React = [
         title: "E-Commerce",
         img: "assets/react/javascriptEcommerce.png",
         link: "https://omarhashimi111.github.io/javascript-ecommerce/"
+    },{
+        id: 7,
+        title: "Form",
+        img: "assets/react/javascriptEcommerce.png",
+        link: "https://omarhashimi111.github.io/javascript-ecommerce/"
     },
     {
         id: 4,
         title: "Mp3 Player",
-        img: "assets/react/mp3.png",
-        link: "https://omarhashimi111.github.io/Mp3/"
+        img: "assets/react/form.png",
+        link: "https://omarhashimi111.github.io/register-form/"
     },{
         id: 5,
         title: "Budget Management",
