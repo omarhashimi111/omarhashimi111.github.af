@@ -54,13 +54,13 @@ export const React = [
     },{
         id: 7,
         title: "Form",
-        img: "assets/react/javascriptEcommerce.png",
+        img: "assets/react/Form.png",
         link: "https://omarhashimi111.github.io/javascript-ecommerce/"
     },
     {
         id: 4,
         title: "Mp3 Player",
-        img: "assets/react/form.png",
+        img: "assets/react/mp3.png",
         link: "https://omarhashimi111.github.io/register-form/"
     },{
         id: 5,

@@ -47,7 +47,7 @@ function Portf() {
   return (
     <div className='portf' id="portf">
       <h1>Protfolio</h1>
-      <ul>
+      <ul className="mylist">
         {list.map(item=> <PortfList key={item.id} item={item}  active={selected === item.id}
          setSelected={setSelected}/>)}
       </ul>

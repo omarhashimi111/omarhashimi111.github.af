@@ -16,32 +16,39 @@
         }
     }
 
+    
+
     ul{
+        width: 100%;
         margin: 10px;
         padding: 0;
         list-style: none;
-        display: flex;  
-        overflow-y: hidden;     
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        overflow: auto;  
+        height: 55px;    
 
         @include mobile{
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 10px ;
+            justify-content: space-around;
+            margin: 2px ;
         }
 
         
 
 
         li{
-            font-size: 16px;
-            margin-right: 50px;
-            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 18px;
+            padding: 4px;
             border-radius: 10px;
-            height: 100%;
             cursor: pointer;
 
-            @include mobile{
-                margin-left: 20px;
+            @include mobile{       
+                font-size: 16px;
+                overflow: auto;
             }
 
 

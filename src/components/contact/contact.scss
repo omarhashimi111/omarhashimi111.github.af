@@ -3,6 +3,7 @@
 .contact{
     background-color: #fff;
     display: flex;
+    position: relative;
 
     @include mobile{
         flex-direction: column;
@@ -25,6 +26,7 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        
 
 
         h2{
@@ -41,10 +43,10 @@
 
 
             input{
-                width: 300px;
+                min-width: 50%;
                 height: 35px;
                 font-size: 16px;
-
+                border: 1px black solid;
                 @include mobile{
                     width: 200px;
                     height: 20px;
@@ -52,12 +54,13 @@
                 }
             }
             textarea{
-                width: 300px;
+                min-width: 50%;
                 height: 200px;
                 font-size: 16px;
+                border: 1px black solid;
 
                 @include mobile{
-                    width: 200px;
+                    max-width: 200px;
                     height: 140px;
                     padding-left: 5px;
                 }
@@ -75,5 +78,22 @@
                 font-weight: 600;
             }
         }
+    }
+    .thanksContainer{
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        z-index: 10;
+    }
+    .done{
+        text-align: center;
+        color: green;
+    }
+    .fail{
+        text-align: center;
+        color: red;
+    }
+    .loadingbtn{
+        background-color: gray;
     }
 }
