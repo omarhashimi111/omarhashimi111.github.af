@@ -55,13 +55,13 @@ export const React = [
         id: 7,
         title: "Form",
         img: "assets/react/Form.png",
-        link: "https://omarhashimi111.github.io/javascript-ecommerce/"
+        link: "https://omarhashimi111.github.io/register-form/"
     },
     {
         id: 4,
         title: "Mp3 Player",
         img: "assets/react/mp3.png",
-        link: "https://omarhashimi111.github.io/register-form/"
+        link: "https://omarhashimi111.github.io/Mp3/"
     },{
         id: 5,
         title: "Budget Management",
